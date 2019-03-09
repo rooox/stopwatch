@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Electrolize|Orbitron|Unica+One');
+@import url("https://fonts.googleapis.com/css?family=Electrolize|Orbitron|Unica+One");
 
 .App {
   text-align: center;
   background-color: #b00000;
   height: 100vh;
-  width: 100vw
+  width: 100vw;
 }
-.stopwatch_container{
-  height:400px;
-  width:400px;
+.stopwatch_container {
+  height: 600px;
+  width: 400px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -16,28 +16,28 @@
   right: 0;
   margin: auto;
   background-color: whitesmoke;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 24px;
 }
-.icon_title_container{
+.icon_title_container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
 }
-.stopwatch{
+.stopwatch {
   height: 100px;
 }
-.title{
-font-size: 40px;
-margin: 10px 0;
-font-family: 'Orbitron', sans-serif;
-font-family: 'Unica One', cursive;
-font-family: 'Electrolize', sans-serif;
-line-height: 30px;
+.title {
+  font-size: 40px;
+  margin: 10px 0;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Unica One", cursive;
+  font-family: "Electrolize", sans-serif;
+  line-height: 30px;
 }
 
-.time{
+.time {
   border-style: solid;
   border-color: black;
   /* border-radius: 50%; */
@@ -49,42 +49,71 @@ line-height: 30px;
   font-size: 30px;
   margin-bottom: 34px;
   margin-top: 30px;
-  box-shadow: 0 5px 10px -5px rgba(0,0,0,.5);
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
 }
 
-
-
-button{
-  outline:none;
+button {
+  outline: none;
   height: 35px;
   width: 90px;
   border-radius: 7px;
   font-size: 20px;
-  margin: 5px;
-  font-family: 'Electrolize', sans-serif;
-  box-shadow: 0 5px 10px -5px rgba(0,0,0,.5);
-  color: black
+  margin: 3px;
+  font-family: "Electrolize", sans-serif;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+  color: black;
 }
 
-button:hover{
-  cursor:pointer
+button:hover {
+  cursor: pointer;
 }
 
-
-.start:disabled{
+.start:disabled {
   box-shadow: 0 0 4pt 1pt green;
-
 }
-.stop:disabled{
+.stop:disabled {
   /* outline-color: red; */
   box-shadow: 0 0 4pt 1pt red;
 }
-.clear:disabled{
+.clear:disabled {
   outline-color: black;
-  box-shadow: 0 0 4pt 1pt black;}
-
-
-
+  box-shadow: 0 0 4pt 1pt black;
+}
+.laps_container {
+  box-shadow: inset 0 0 4px #000000;
+  margin: auto;
+  margin: auto;
+  background-color: lightgrey;
+  height: 222px;
+  width: 356px;
+  overflow: scroll;
+  border-radius: 19px;
+  margin-top: 21px;
+  padding-top: 17px;
+}
+.lap_button {
+  position: absolute;
+  right: 151px;
+  bottom: 218px;
+  background: green;
+  color: white;
+}
+.lap_button:disabled {
+  background: grey;
+}
+.lap_container {
+  display: flex;
+  justify-content: center;
+  height: 28px;
+  /* overflow: scroll; */
+}
+.lap_number {
+  font-size: 22px;
+  margin-right: 8px;
+}
+.lap_time {
+  font-size: 22px;
+}
 
 .App-header {
   background-color: #282c34;
